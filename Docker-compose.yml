@@ -14,7 +14,7 @@ services:
       - "5500:5500"
     environment:
       - PORT=5500
-      - MONGO_URL=mongodb://mongo:27017/mydatabase
+      - MONGO_URL=mongodb://mongo:27017/
     depends_on:
       - mongo
 
