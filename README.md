@@ -1,4 +1,4 @@
-Autobot Warehouse Simulation
+*<h1>Autobot Warehouse Dillema</h1>*
 This Python-based simulation visualizes autonomous bots navigating through a warehouse environment using the A pathfinding algorithm. The program allows users to dynamically set obstacles, start points, and end points within a customizable grid. The GUI, built with Tkinter, offers interactive elements to configure the simulation environment, providing real-time visual feedback on the bot movements.*
 
 <h2>Introduction</h2>
@@ -16,10 +16,11 @@ Welcome to the Autobot Warehouse Simulation project documentation. This document
   <h2>Tkinter</h2>
   
   -> This GUI toolkit is bundled with most Python installations. If it is missing, it can be installed via pip:
-
-bash
-Copy code
+  
+```bash
 pip install tk
+```
+
 <h1>📅<i> Installation</i> </h1>
 
 <i>Setup Instructions:</i>
@@ -34,37 +35,48 @@ pip install tk
 
 Navigate to the directory containing the script.
 Run the script through the command line:
-bash
-Copy code
+```
 python autobot_simulation.py
-Replace 'autobot_simulation.py' with your script's filename if different.
+```
 
-<h2>Initialize the Grid</h2>
 
-A dialog box will prompt you to enter the grid size when the program starts. Input an integer value (e.g., 5 for a 5x5 grid) within the permissible range of 2 to 20.
 <h2>Configure the Simulation</h2>
 
 The main GUI window displays a grid based on the specified size.<br>
-Placing Obstacles: Click the "Place Obstacles" button, then click on any grid cell to mark it as an obstacle, which will appear in red.<br>
-Adding Bots: Click the "+Bot" button to initiate the placement of a new bot:<br>
-First click defines the start position (green cell).<br>
-Second click sets the end position (yellow cell).<br>
-Repeat the above steps as needed to place multiple bots.
+1. **Enter Grid Size:** Upon launching, a small dialog will prompt you to enter the grid size. Input an integer value (e.g., 5 for a 5x5 grid). The maximum allowable size is 20x20.
+
+2. **Interactive GUI:** After entering the grid size, a GUI window will open displaying a grid. You can interact with the grid to set up the simulation:
+   - **Place Obstacles:** Click on the "Place Obstacles" button and then click on the grid cells to mark them as obstacles (red cells).
+   - **Add Bots:** Click on the "+Bot" button. You will first click a cell to place the bot's start position (green cell), and then click another cell to set the destination (yellow cell).
+
+3. **Start Simulation:** Once the bots and obstacles are set up, click "Start Simulation" to begin the pathfinding simulation. Each bot's movement will be shown step by step.
+<li>Repeat the above steps as needed to place multiple bots.
 <h2>Run the Simulation</h2>
 
-Once all bots and obstacles are placed, click "Start Simulation". The program will simulate each bot's journey from start to end, avoiding obstacles, with each bot displayed in a distinct color.
-The movement of bots is animated in the grid, showing a step-by-step traversal based on the calculated path.
+<li>Once all bots and obstacles are placed, click "Start Simulation".<br> 
+<li>The program will simulate each bot's journey from start to end, avoiding obstacles, with each bot displayed in a distinct color.<br>
+<li>The movement of bots is animated in the grid, showing a step-by-step traversal based on the calculated path.
 <h1>📅 <i>Additional Controls</i> </h1>
 
-Clear Grid: Resets the entire grid, removing all bots, obstacles, and paths.
-Close: Exits the program.
+<li>Clear Grid: Resets the entire grid, removing all bots, obstacles, and paths.<br>
+<li>Close: Exits the program.
 <h1>📅 <i>Features</i> </h1>
 
-Interactive Grid Setup: Users can interactively place obstacles and define paths for multiple bots within the grid.
-A Algorithm Implementation: The program utilizes the A search algorithm to determine the shortest path for each bot from its start to its end point, considering obstacles.**
-Real-Time Visualization: Each step of the bot's path is visualized in real-time, allowing users to visually track the pathfinding process.
-Multiple Bots: Supports configuring and running simulations for multiple bots simultaneously.
+<li>Interactive Grid Setup: Users can interactively place obstacles and define paths for multiple bots within the grid.<br>
+<li>A Algorithm Implementation: The program utilizes the A search algorithm to determine the shortest path for each bot from its start to its end point, considering obstacles.**<br>
+<li>Real-Time Visualization: Each step of the bot's path is visualized in real-time, allowing users to visually track the pathfinding process.<br>
+<li>Multiple Bots: Supports configuring and running simulations for multiple bots simultaneously.
 <h1>📅 <i>Troubleshooting</i> </h1>
 
 Ensure all start and end positions are paired correctly; the simulation will not start if there is an unequal number of starts and ends.
 If the grid does not respond to clicks, ensure that the program window is active and not minimized.
+
+
+
+
+
+
+
+
+
+
